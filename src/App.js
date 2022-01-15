@@ -3,6 +3,7 @@ import SideItem from "./SideItem.js";
 import turtle from "./images/turtle.jpeg";
 
 function App() {
+  /*testing*/
   return (
     <div className="App">
       <nav class="navContainer">
