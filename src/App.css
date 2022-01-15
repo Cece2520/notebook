@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis&display=swap');
+
+.App{
+  font-family:'Dosis', sans-serif;
+  margin: 0;
+}
+
+:root {
+    --blue: #396dff;
+    --grey: #efefef;
+    --white: #fff;
+    --darkGrey: #b6b6b6;
+
+    --xs: 4px;
+    --s: 8px;
+    --m: 16px;
+    --l: 24px;
+}
+
+.heading {
+    font-size: 32pt;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    padding-top: var(--m);
+    gap: var(--s);
+}
+
+.mainContainer {
+    display: flex;
+    gap: var(--l);
+    padding: var(--l);
+    align-items: flex-start;
+}
+
+.sidebar {
+    flex-basis: fit-content;
+    background: var(--grey);
+    border-width: 5px;
+    padding: var(--xs);
+}
+
+.menuLabel {
+    padding: var(--s);
+    flex-basis: fit-content;
+    text-align: center;
+    
+}
+
+.sideItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: var(--m);
+
+    padding: var(--s);
+    flex-basis: fit-content;
+    border-top: var(--darkGrey) solid 2px;
+    background: var(--grey);
+}
+
+.sideButton {
+    height: 15px;
+    width: 15px;
+}
+
+.content {
+    padding: var(--s);
+    flex-grow:3;
+    background: var(--grey);
+}
+
+img {
+    padding: var(--m);
+}
+
+.icon {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 70%;
+}
+
+.u-textCenter {
+    text-align: center;
+}
+
+.navContainer {
+    padding: var(--s) var(--m);
+    background-color: var(--blue);
+}
+
+.navTitle {
+    color: var(--grey);
+    font-size: 24px;
+    margin: 0;
+}
