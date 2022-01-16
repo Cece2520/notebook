@@ -6,7 +6,7 @@ const Nav = () => {
   return (
     <div class="heading">
       <img class="icon" src={turtle} alt="Turtle" />
-      <span> Testing </span>
+      <span> Notebook of Things </span>
     </div>
   );
 };
