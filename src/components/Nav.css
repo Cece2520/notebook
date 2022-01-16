@@ -1,0 +1,10 @@
+.navContainer {
+    padding: var(--s) var(--m);
+    background-color: var(--blue);
+}
+
+.navTitle {
+    color: var(--grey);
+    font-size: 24px;
+    margin: 0;
+}

@@ -15,53 +15,24 @@
     --s: 8px;
     --m: 16px;
     --l: 24px;
+    --xl: 32px;
 }
 
-.heading {
-    font-size: 32pt;
-    display: flex;
-    justify-content: center;
-    align-items:center;
-    padding-top: var(--m);
-    gap: var(--s);
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    font-weight: bold;
 }
 
 .mainContainer {
     display: flex;
-    gap: var(--l);
+    gap: var(--xl);
+    margin: 0 var(--xl);
     padding: var(--l);
     align-items: flex-start;
-}
-
-.sidebar {
-    flex-basis: fit-content;
-    background: var(--grey);
-    border-width: 5px;
-    padding: var(--xs);
-}
-
-.menuLabel {
-    padding: var(--s);
-    flex-basis: fit-content;
-    text-align: center;
-    
-}
-
-.sideItem {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: var(--m);
-
-    padding: var(--s);
-    flex-basis: fit-content;
-    border-top: var(--darkGrey) solid 2px;
-    background: var(--grey);
-}
-
-.sideButton {
-    height: 15px;
-    width: 15px;
 }
 
 .content {
@@ -74,24 +45,6 @@ img {
     padding: var(--m);
 }
 
-.icon {
-    width: 50px;
-    height: 50px;
-    object-fit: cover;
-    border-radius: 70%;
-}
-
 .u-textCenter {
     text-align: center;
-}
-
-.navContainer {
-    padding: var(--s) var(--m);
-    background-color: var(--blue);
-}
-
-.navTitle {
-    color: var(--grey);
-    font-size: 24px;
-    margin: 0;
 }

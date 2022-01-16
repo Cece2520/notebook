@@ -1,0 +1,40 @@
+.sidebar {
+    flex-basis: 165px;
+    flex-shrink: 1;
+    background: var(--grey);
+    border-width: 5px;
+    padding: var(--xs);
+}
+
+.menuLabel {
+    padding: var(--s);
+    flex-basis: fit-content;
+    text-align: center;
+    
+}
+
+.sideItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: var(--m);
+
+    padding: var(--s);
+    flex-basis: fit-content;
+    border-top: var(--darkGrey) solid 2px;
+    background: var(--grey);
+}
+
+.sideButton {
+    height: 15px;
+    width: 15px;
+}
+
+.onPage {
+    background: var(--darkGrey);
+    font-weight: bold;
+}
+
+.offPage {
+    background: var(--grey);
+}

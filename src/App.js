@@ -1,33 +1,34 @@
 import "./App.css";
-import SideItem from "./SideItem.js";
-import turtle from "./images/turtle.jpeg";
 
-function App() {
-  /*testing*/
+import Nav from "./components/Nav.js";
+import Heading from "./components/Heading.js";
+import Menu from "./components/Menu.js";
+import Content from "./components/Content.js";
+
+import React from "react";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+
+/*Pages*/
+import Secret from "./pages/Secret.js";
+import Notes from "./pages/Notes.js";
+
+let pages = {
+  "Secret": <Secret/>,
+  "Notes": <Notes/>};
+
+export default function App() {
   return (
-    <div className="App">
-      <nav class="navContainer">
-        <h1 class="navTitle">Notebook</h1>
-      </nav>
-
-      <div class="heading">
-        <img class="icon" src={turtle} alt="Turtle"/>
-        <span> Testing </span>
-      </div>
-
-      <div class="mainContainer">
-        <div class="sidebar">
-          <div class="menuLabel"> Menu </div>
-          <SideItem content="Test1 but now it's a long one" />
-          <SideItem content="Test2" />
-        </div>
-        <div class="content">
-          Content <br />
-          <a href="https://www.google.com/"> link </a>
+    <Router>
+      <div class="App">
+        <Nav />
+        <Heading />
+        <div class="mainContainer">
+          <Menu pages={pages} on="Home"/>
+          <div class="content">
+            <Content pages={pages}/>
+          </div>
         </div>
       </div>
-    </div>
+    </Router>
   );
 }
-
-export default App;
