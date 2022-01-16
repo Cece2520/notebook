@@ -7,7 +7,7 @@ import "./Menu.css";
 const Menu = (props) => {
   return (
     <div class="sidebar">
-      <Link to="/"><div class="menuLabel"> Menu </div> </Link>
+      <Link to="/"><div class="menuLabel"> Home </div> </Link>
       {Object.keys(props.pages).map(item => (<SideItem content={item}/>))}
     </div>
   );

@@ -3,19 +3,27 @@
 .App{
   font-family:'Dosis', sans-serif;
   margin: 0;
+  font-size: var(--headFont);
 }
 
 :root {
-    --blue: #396dff;
-    --grey: #efefef;
+    --primary: #5980d4;
+    --light: #d7dce4;
     --white: #fff;
-    --darkGrey: #b6b6b6;
+    --dark: #637991;
+
+    --secondary: #b8bac7;
+    --secondDark: #25215c;
 
     --xs: 4px;
     --s: 8px;
     --m: 16px;
     --l: 24px;
     --xl: 32px;
+
+    --headFont: 20px;
+    --contentFont: 18px;
+    --smallFont: 14px;
 }
 
 a {
@@ -29,16 +37,16 @@ a:hover {
 
 .mainContainer {
     display: flex;
-    gap: var(--xl);
-    margin: 0 var(--xl);
-    padding: var(--l);
+    gap: 6%;
+    margin: var(--m) 8%;
     align-items: flex-start;
 }
 
 .content {
-    padding: var(--s);
+    padding: 0 var(--s);
     flex-grow:3;
-    background: var(--grey);
+    background: var(--secondary);
+    border-radius: 4%;
 }
 
 img {

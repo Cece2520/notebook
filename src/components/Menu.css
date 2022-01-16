@@ -1,7 +1,7 @@
 .sidebar {
-    flex-basis: 165px;
+    flex-basis: 25%;
     flex-shrink: 1;
-    background: var(--grey);
+    background: var(--light);
     border-width: 5px;
     padding: var(--xs);
 }
@@ -21,20 +21,11 @@
 
     padding: var(--s);
     flex-basis: fit-content;
-    border-top: var(--darkGrey) solid 2px;
-    background: var(--grey);
+    border-top: var(--dark) solid 2px;
+    background: var(--light);
 }
 
 .sideButton {
     height: 15px;
     width: 15px;
-}
-
-.onPage {
-    background: var(--darkGrey);
-    font-weight: bold;
-}
-
-.offPage {
-    background: var(--grey);
 }

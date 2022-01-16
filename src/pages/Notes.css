@@ -1,0 +1,70 @@
+.entryForm {
+  display: flex;
+  flex-direction: column;
+  margin: var(--s);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+.textEntry {
+    resize: none;
+    border: none;
+    font-family:'Dosis', sans-serif;
+    font-size: var(--contentFont);
+    padding: var(--m);
+    outline: none;
+}
+
+.newNote {
+  display: flex;
+  flex-direction: column;
+  font-size: var(--contentFont);
+  position: relative;
+  margin: var(--m) 0 var(--s) 0;
+  --field-padding: var(--m);
+}
+
+.newNote input {
+  border: None;
+  background: white;
+  padding: var(--field-padding);
+  margin: var(--xs) 0;
+  border-radius: 3px;
+  height: 2*var(--contentFont);
+  width: 100%;
+  font-size: var(--contentFont);
+}
+
+.newNote .placeholder {
+  position: absolute;
+  left: var(--field-padding);
+  bottom: 30%;
+  top: var(--field-padding)*6;
+  width: calc(100% - (var(--field-padding) * 2));
+  color: var(--darkGrey);
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  transition: top 0.3s ease, color 0.3s ease, font-size 0.3s ease;
+}
+
+.textEntry:focus + .placeholder {
+  top: -20px;
+  left: -4px;
+  font-size: var(--smallFont);
+  color: black;
+}
+
+.saveNote {
+    width: 50px;
+    height: 30px;
+    margin: 0;
+    align-self: flex-end;
+    border: none;
+    background-color: var(--secondDark);
+    color: white;
+}
+
